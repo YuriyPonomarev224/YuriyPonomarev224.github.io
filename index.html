@@ -1,243 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;700&family=Roboto:wght@500&display=swap"
-        rel="stylesheet">
-    <title>No tab</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <section class="promo">
-        <div class="container">
-            <header class="header">
-                <a href="#" class="header__logo">
-                    <img src="icon/notab_logo.svg" alt="logo">
-                </a>
-                <div class="header__login">
-                    <img src="icon/login_btn.svg" alt="login">
-                    <a href="#">Login</a>
+    <main>
+        <section class="header">
+            <div class="header__logo"><a href="#" class="header__logo_ling"><img src="icons/logo_2782.png" alt="logo"
+                        class="header__logo_img"></a></div>
+            <div class="header__wrapper">
+                <div class="header__modal" onclick="modalWidow()">
+                    <div class="header__modal_text">AREA RISERVATA</div>
+                    <img src="icons/riservata_icon.svg" alt="RISERVATA" class="header__modal_icon">
                 </div>
-            </header>
-
-
-            <div class="promo__wrapper">
-
-                <div class="promo__description">
-                    <h1 class="promo__header">A platform<br> that works smarter</h1>
-                    <div class="promo__subheader_line"></div>
-                    <h2 class="promo__subheader">NoTab allows bars & nightclubs <br> to manage, understand, and grow
-                        their
-                        business from a single dashboard
-                        <div class="promo__ellipse"></div>
-                    </h2>
-                </div>
-                <div class="promo__app">
-                    <div class="promo__vector"></div>
-                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu_list">
+                        <li class="header__menu_list_item"><a href="#" class="header__menu_link">HOME</a></li>
+                        <li class="header__menu_list_item"><a href="#" class="header__menu_link header__dropdown">AZIENDA</a>
+                            <div class="header__dropdown_content">
+                                <div class="header__dropdown_item"><a class="header__dropdown_link" href="#">STORIA</a>
+                                </div>
+                                <div class="header__dropdown_item"><a class="header__dropdown_link" href="#">MM DESIGN</a>
+                                </div>
+                                <div class="header__dropdown_item"><a class="header__dropdown_link" href="#">DESIGNER</a>
+                                </div>
+                                <div class="header__dropdown_item"><a class="header__dropdown_link"
+                                        href="#">CERTIFICAZIONI</a></div>
+                            </div></li>
+                        <li class="header__menu_list_item"><a href="#" class="header__menu_link">COLLEZIONI</a></li>
+                        <li class="header__menu_list_item"><a href="#" class="header__menu_link">NEWS</a></li>
+                        <li class="header__menu_list_item"><a href="#" class="header__menu_link">CONTATTI</a></li>
+                    </ul>
+                </nav>
             </div>
+        </section>
 
-            <div class="promo__download">
-                <div class="promo__download_text">DOWNLOAD OUR APP</div>
-                <div class="promo__links">
-                    <a href="https://www.apple.com/ru/app-store/" class="promo__store" target="_blank"><img
-                            src="icon/AppleStore.svg" alt="AppleStore"></a>
-                    <a href="https://play.google.com" class="promo__store" target="_blank"><img
-                            src="icon/GoogleStore.svg" alt="GoogleStore"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="mission">
-        <div class="mission__contact_us">
-            <div class="mission__item">
-                <div class="mission__item_text">Would like to become<br>
-                    a member, please<br> contact us<br>
-                    <a href="mailto:support@notab.com">support@notab.com</a>
-                </div>
-            </div>
-            <div class="mission__item two">
-                <div class="mission__item_text"> <br> Already a partner?<br><br>
-                    <a href="#">Login</a>
-                </div>
-            </div>
-        </div>
+        <section class="home">
+            <div class="slider">
+                <input class="slider__inputs" type="radio" name="kadoves" id="slaid1" checked>
+                <input class="slider__inputs" type="radio" name="kadoves" id="slaid2">
+                <input class="slider__inputs" type="radio" name="kadoves" id="slaid3">
 
-        <div class="mission__content">
-            <div class="mission__app"></div>
-            <div class="mission__description">
-                <div class="mission__ellipse"></div>
-                <h2>Our mission and vision</h2>
-                <p>While technology is our sweet spot, we’ve developed our vision alongside
-                    our customers to ensure your everyday problems are solved through simplistic tools. And as your
-                    business grows, we’ll grow right alongside with you. </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="idscanner">
-        <div class="container">
-            <div class="idscanner__content">
-                <div class="idscanner__screenshot">
-                    <div class="idscanner__app"><img src="image/idscanner_scr1.svg" alt="screenshot"></div>
-                    <div class="idscanner__app"><img src="image/idscanner_scr2.svg" alt="screenshot"></div>
+                <div class="slider__kadoves">
+                    <label class="slider__kadoves_labels" for="slaid1"></label>
+                    <label class="slider__kadoves_labels" for="slaid2"></label>
+                    <label class="slider__kadoves_labels" for="slaid3"></label>
                 </div>
 
-                <div class="idscanner__description">
-                    <h2>ID Scanner</h2>
-                    <p>Scan, verify, and collect data on each person that walks through your door
-                        to humanize your data. You also get
-                        a digital 86 list as well as a citywide ban list to keep your venue safe.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bitool">
-        <div class="container">
-            <div class="bitool__description">
-                <h2>BI Tool Integration</h2>
-                <p>We use Business Intelligence Tool that allows you to be updated what is happening in your business
-                    just by one click. Track revenue <br>
-                    and profit by one click.</p>
-            </div>
-            <div class="bitool__view"></div>
-        </div>
-    </section>
-
-    <section class="qrcode">
-        <div class="qrcode__wrapper">
-            <div class="qrcode__description">
-                <div class="qrcode__description_content">
-                    <h2>QR code</h2>
-                    <p>No more conflict situations due to wrong order. The guest selects the positions, and after that
-                        an
-                        individual QR code of his order is generated</p>
-                    <div class="qrcode__links">
-                        <a href="https://www.apple.com/ru/app-store/" class="qrcode__store" target="_blank"><img
-                                src="icon/AppleStore.svg" alt="AppleStore"></a>
-                        <a href="https://play.google.com" class="qrcode__store" target="_blank"><img
-                                src="icon/GoogleStore.svg" alt="GoogleStore"></a>
+                <div class="slider__content">
+                    <div class="slider__item">
+                        <img class="slider__item_img" src="img/img1.jpg" alt="image1" />
+                        <img class="slider__item_img" src="img/img2.jpg" alt="image2" />
+                        <img class="slider__item_img" src="img/img3.jpg" alt="image3" />
                     </div>
                 </div>
             </div>
-            <div class="qrcode__nightlike"> <img src="image/Nightlife.svg" alt="Nightlife"></div>
-        </div>
-        <div class="qrcode__content">
-            <div class="qrcode__app"><img src="image/qr_code_scn1.png" alt="screenshot"></div>
-            <div class="qrcode__app2"><img src="image/qr_code_scn2.png" alt="screenshot"></div>
-        </div>
-    </section>
-
-    <section class="generate">
-        <div class="container">
-            <div class="generate__wrapper">
-                <div class="generate__app"><img src="image/qr-code_scn3.svg" alt="screenshot"></div>
-                <div class="generate__item"> <img src="image/Arrow.svg" alt="arrow">
-                    <p>Scan QR-code</p>
-                </div>
-                <div class="generate__rectangle"></div>
-
+            <div class="home__text">
+                <div class="home__text_h2">Lampadari contemporanei</div>
+                <div class="home__text_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    dolore</div>
             </div>
-            <div class="generate__description">
-                <div class="generate__h2">Generate your <br> QR-code</div>
-                <div class="generate__p">The guest QR code is scanned
-                    by the staff and automatically sent</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ordering">
-        <div class="ordering__rectangle"></div>
-        <div class="container">
-            <div class="ordering__text">
-                <h2>Easier ordering.
-                    Happier guests.</h2>
-                <p>NoTab makes it simple for patrons to easily</p>
-            </div>
-            <div class="ordering__wrapper">
-                <div class="ordering__item1">
-                    <p>No more lost or
-                        forgotten credit cards</p>
-                </div>
-                <div class="ordering__item2">
-                    <p>No more lost or
-                        forgotten credit cards</p>
-                </div>
-                <div class="ordering__item3">
-                    <p>No more split <br>
-                        your tab</p>
-                </div>
-                <div class="ordering__item4">
-                    <p>Skip the line</p>
+            <div class="box">
+                <button id="box_btn" class="box__btn" onclick="myFunction()"><img class="box__btn_img"
+                        src="icons/freccia.png" alt="click"></button>
+                <div id="box_content" class="box__wrapper">
+                    <div class="box__item1">
+                        <div class="box__item1_h">Stai pensando ad un progetto?</div>
+                        <div class="box__item1_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor dolore</div>
+                        <a href="#" class="box__item1_link">Approfondisci</a>
+                    </div>
+                    <div class="box__item2">
+                        <div class="box__item2_h">Vi aspettiamo alla fiera Euroluce</div>
+                        <div class="box__item2_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor dolore</div>
+                        <a href="#" class="box__item2_link">Approfondisci</a>
+                    </div>
+                    <div class="box__item3">
+                        <div class="box__item3_h">Scopri la nuova collezione</div>
+                        <div class="box__item3_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor dolore</div>
+                        <a href="#" class="box__item3_link">Approfondisci</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="banner">
-        <div class="banner__app"><img src="image/no_tab_scrn.svg" alt="screenshot"></div>
-    </section>
-    <section class="form">
-        <div class="form__rectangle2"></div>
-        <div class="form__wrapper">
-            <div class="form__text">
-                <div class="form__rectangle1"></div>
-                <h2>Get In Touch</h2>
-                <p>Have questions about Noble or just want to say hello? <br>
-                    Drop us a line and a member of our team will getback to you shortly.</p>
-            </div>
-            <form action="#" class="form__feed">
-                <input name="name" required placeholder="Name" type="text">
-                <input name="venue name" required placeholder="Venue Name" type="text">
-                <div class="form__wrap">
-                    <input name="venue city" required placeholder="Venue City" type="text">
-                    <input name="state city" required placeholder="State City" type="text">
+        </section>
+        <section class="modalbox" id="modalbox">
+            <div class="modalbox__wrapper">
+                <div class="modalbox__text">
+                    <p class="modalbox__text_h">AREA RISERVATA</p>
+                    <img src="icons/modal_exit.svg" alt="Exit" class="modalbox__img" onclick="modalWidow()">
                 </div>
-                <input name="email" required placeholder="Email" type="email">
-                <input name="subject" required placeholder="Subject" type="text">
-                <textarea name="message" required placeholder="Message" type="text"></textarea>
-                <button>Send</button>
-            </form>
-            <div class="form__download">
-                <div class="form__download_text">DOWNLOAD OUR APP</div>
-                <div class="form__links">
-                    <a href="https://www.apple.com/ru/app-store/" class="form__store" target="_blank"><img
-                            src="icon/footer_apple.svg" alt="AppleStore"></a>
-                    <a href="https://play.google.com" class="form__store" target="_blank"><img
-                            src="icon/footer_google.svg" alt="GoogleStore"></a>
+                <div class="modalbox__form">
+                    <div class="modalbox__form_accedi">
+                        <p class="modalbox__form_h">ACCEDI</p>
+                        <form class="modalbox__form_container" action="#">
+                            <input class="modalbox__form_inputs_accedi" name="email" required placeholder="Email"
+                                type="email">
+                            <input class="modalbox__form_inputs_accedi" name="password" required placeholder="Password"
+                                type="password">
+                            <button class="modalbox__form_btn">ACCEDI</button>
+                            <a href="#" class="modalbox__form_link">Password dimenticata</a>
+                        </form>
+                    </div>
+                    <div class="modalbox__form_reg">
+                        <p class="modalbox__form_h">REGISTRATI</p>
+                        <form class="modalbox__form_container" action="#">
+                            <input class="modalbox__form_inputs" name="name" required placeholder="Nome" type="text">
+                            <input class="modalbox__form_inputs" name="cogname" required placeholder="Cognome"
+                                type="text">
+                            <input class="modalbox__form_inputs" name="email" required placeholder="E-mail"
+                                type="email">
+                            <input class="modalbox__form_inputs" name="password" required placeholder="Password"
+                                type="password">
+                            <label class="modalbox__form_label">
+                                <input class="modalbox__form_checkbox" required type="checkbox" name="Dati"
+                                    value="Processing of data">
+                                Acconsento al trattamento dei dati
+                            </label>
+                            <label class="modalbox__form_label">
+                                <input class="modalbox__form_checkbox" required type="checkbox" name="News"
+                                    value="News">
+                                Mi iscrivo alla Newsletter
+                            </label>
+                            <button class="modalbox__form_btn">ISCRIVITI</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <section class="footer">
-
+        </section>
+    </main>
+    <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__rectangle"></div>
-            <div class="footer__contact">
-                <img src="icon/footer_notab.png" alt="notab_logo">
-                <h3>Contact us: <br> 
-                    <a href="mailto:support@notab.com" class="footer__email">support@notab.com</a></h3>
-                
-                <p>© 2020 - NoTab®</p>
+            <div class="footer__wrapper_item">
+                <div class="footer__wrapper_item_h">Lampadari made in italy</div>
+                <div class="footer__wrapper_item_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea</div>
             </div>
-            <div class="footer__terms">
-                <a href="#">Terms to use</a>
-                <a href="#">Privacy policy</a>
+            <div class="footer__wrapper_item">
+                <div class="footer__wrapper_item_h">lampadari artigianali</div>
+                <div class="footer__wrapper_item_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea</div>
+            </div>
+            <div class="footer__wrapper_item">
+                <div class="footer__wrapper_item_h">45 anni di esperienza</div>
+                <div class="footer__wrapper_item_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea</div>
+            </div>
+            <div class="footer__wrapper_item">
+                <div class="footer__wrapper_item_h">NEWSLETTER</div>
+                <form class="footer__wrapper_form">
+                    <input class="footer__wrapper_form_inputs" name="name e cogname" required
+                        placeholder="Nome e Cognome" type="text">
+                    <input class="footer__wrapper_form_inputs" name="email" required placeholder="E-mail" type="email">
+                    <label class="footer__wrapper_form_label">
+                        <input class="footer__wrapper_form_checkbox" required type="checkbox" name="Dati"
+                            value="Processing of data">
+                        Acconsento al trattamento dei dati
+                    </label>
+                    <button class="footer__wrapper_form_btn">ISCRIVITI</button>
+                </form>
             </div>
         </div>
-    </section>
+        <div class="footer__subtext">
+            <div class="footer__subtext_title">
+                <div class="footer__subtext_title_item">MMLAMPADARI srl</div>
+                <div class="footer__subtext_title_item">Via Feltrina 00</div>
+                <div class="footer__subtext_title_item">31111 Pederobba (TV)</div>
+                <div class="footer__subtext_title_item"> 0423.123456</div>
+                <div class="footer__subtext_title_item"><a href="mailto:info@mmlampadari.mm" class="footer__subtext_title_link">info@mmlampadari.mm</a></div>
+                <div class="footer__subtext_title_item">P.IVA 04123456789</div>
+            </div>
+            <div class="footer__subtext_icons">
+                <a href="#" class="footer__subtext_icons_links"><img
+                        src="icons/facebook_icon.png" alt="Facebook" class="footer__img"></a>
+                <a href="#" class="footer__subtext_icons_links"><img src="icons/instagram_icon.png" alt="Instagram"
+                        class="footer__img"></a>
+                <a href="#" class="footer__subtext_icons_links"><img src="icons/prin_icon.png" alt="P"
+                        class="footer__img"></a>
+            </div>
+            <div class="footer__subtext_lng">
+                <div class="footer__subtext_lng_ul">
+                    <div class="footer__subtext_lng_item">ITA</div>
+                    <div class="footer__subtext_lng_item">ENG</div>
+                    <div class="footer__subtext_lng_item">DEU</div>
+                    <div class="footer__subtext_lng_item">PYC</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 
 </html>
